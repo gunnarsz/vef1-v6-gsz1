@@ -1,0 +1,27 @@
+{
+  "name": "vef1-2024-v5-synilausn-main",
+  "version": "1.0.0",
+  "description": "verkefni 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunnarsz/verkefni6.git"
+  },
+  "author": "Gunnar Snorri Zoega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunnarsz/verkefni6/issues"
+  },
+  "homepage": "https://github.com/gunnarsz/verkefni6#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.0.1",
+    "sass": "^1.79.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
