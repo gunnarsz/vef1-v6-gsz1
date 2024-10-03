@@ -1,0 +1,26 @@
+@import 'stillingar.scss';
+
+/** Valmynd **/
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing;
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: calc($spacing / 2);
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    display: block;
+  }
+}

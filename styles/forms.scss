@@ -1,0 +1,26 @@
+@import 'stillingar';
+
+/** Skráningarform **/
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: $spacing;
+  font-size: $font-size-headings;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: calc($spacing * 0.5);
+  width: 100%;
+  border: $border-regular;
+  background-color: $color-background-form;
+}
+
+fieldset input[type='checkbox'] {
+  display: inline-block;
+  margin-right: calc($spacing * 0.5);
+  width: auto;
+}

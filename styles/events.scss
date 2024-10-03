@@ -1,0 +1,26 @@
+@import 'stillingar';
+
+/** Viðburðir **/
+.event {
+  clear: left;
+  width: 100%;
+  margin-bottom: calc($spacing * 2);
+}
+
+.event .title {
+  margin-bottom: $spacing;
+}
+
+.event .content {
+  width: 100%;
+}
+
+.event img {
+  float: left;
+  margin-right: $spacing;
+  margin-bottom: $spacing;
+}
+
+.event .register {
+  clear: both;
+}

@@ -1,0 +1,40 @@
+/** Meginmál og efni forsíðu **/
+
+main {
+    width: 100%;
+  }
+  
+  /**
+   * notum þetta til að fá bil á milli eininga _almennt_
+   * en ekki að hver eining þurfi að huga að bili
+   */
+  main > .content {
+    display: flex;
+    flex-direction: column;
+    gap: calc($spacing * 2);
+  }
+  
+  /*** Inngangsefni á forsíðu ***/
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $spacing;
+  }
+  
+  .intro img {
+    order: 1;
+    border-radius: $border-radius-image;
+  }
+  
+  @media (min-width: 500px) {
+    .intro {
+      flex-direction: row;
+    }
+  
+    .intro img {
+      max-width: $max-width-image;
+    }
+  }
+  

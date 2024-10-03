@@ -1,0 +1,11 @@
+@import 'stillingar.scss';
+
+/** Haus á síðum **/
+
+header {
+  padding: $spacing calc($spacing * 1.5);
+  width: 100%;
+  background-color: $color-background-secondary;
+  border-bottom: $border-with-background;
+  text-align: center;
+}

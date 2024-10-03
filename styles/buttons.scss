@@ -1,0 +1,25 @@
+@import 'stillingar.scss';
+
+/** Almennt takka útlit, getur virkað á bæði <a> og <button> **/
+.button {
+  display: inline-block;
+  padding: calc(#{$spacing} * 0.5) $spacing;
+  border: $border-regular;
+  border-radius: $border-radius-regular;
+  border-width: $border-width;
+
+  color: $color-black;
+  background-color: $color-background-secondary;
+  font-size: 1rem;
+  text-decoration: none;
+
+  transition: background-color $transition-time-short $transition-timing-function,
+    color $transition-time-short $transition-timing-function,
+    border-color $transition-time-short $transition-timing-function;
+}
+
+.button:hover {
+  color: $color-background-secondary;
+  background-color: $color-black;
+  border-color: $color-background-secondary;
+}

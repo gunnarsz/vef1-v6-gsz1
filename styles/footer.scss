@@ -1,0 +1,54 @@
+@import 'stillingar';
+
+/** Fótur **/
+footer {
+  display: grid;
+  justify-items: center;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+  border-top: 4px solid $color-border-with-background;
+  width: 100%;
+  background-color: $color-background-secondary;
+  text-align: center;
+}
+
+footer > .content {
+  display: grid;
+  justify-content: center;
+  gap: $vertical-space;
+}
+
+footer > section {
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer h2 {
+  margin-bottom: $spacing;
+}
+
+@media (min-width: 700px) {
+  footer > .content {
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: auto;
+    width: $width-offset;
+    max-width: $max-width;
+  }
+
+  footer .content > section {
+    grid-column: span 4;
+  }
+}
+
+/*** Opnunartími ***/
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: var(--spacing);
+}

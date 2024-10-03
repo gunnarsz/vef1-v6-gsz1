@@ -1,0 +1,56 @@
+@import 'stillingar.scss';
+
+/* Til að transition sé ekki frá hvítum */
+html {
+  background-color: $color-background-primary;
+}
+
+header,
+.wrapper {
+  animation: $transition-time-long $transition-timing-function fade-in;
+}
+
+/**
+ * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
+ */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: $vertical-space;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-background-primary;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    gap: $vertical-space-large;
+  }
+}
+
+.wrapper .wrapper-content {
+  width: $width-offset;
+  max-width: $max-width;
+}
+
+.wrapper .wrapper-nav {
+  margin-bottom: $spacing;
+}
+
+@media (min-width: 800px) {
+  .wrapper .wrapper-content {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gutter;
+  }
+
+  .wrapper .wrapper-nav {
+    grid-column: span 2;
+  }
+
+  .wrapper .wrapper-main {
+    grid-column: span 10;
+  }
+}
