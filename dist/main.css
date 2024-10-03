@@ -460,14 +460,7 @@ footer h2 {
     grid-column: span 4;
   }
 }
-/*** Opnunartími ***/
-dt {
-  font-weight: bold;
-}
 
-dd {
-  margin-bottom: var(--spacing);
-}
 
 /* Stillingar */
 /* Grunn bilið okkar er 1rem == 16px */
