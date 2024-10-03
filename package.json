@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run watch:sass\" \"npm run browser-sync\"",
     "watch:sass": "sass --watch styles/main.scss:dist/main.css --source-map",
+    "build": "sass styles/main.scss dist/main.css --style compressed",
     "browser-sync": "browser-sync start --server --files \"dist/*.css, *.html\"",
     "lint": "stylelint \"**/*.scss\""
   },
